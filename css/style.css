@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;800&family=Roboto:ital,wght@0,500;0,700;1,100&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #f6bf2d;
+  color: #eee;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+img{
+  width: 100%;
+}
+.btn{
+  padding: 8px;
+  background: #f6bf2d;
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+/* header */
+#header{
+  background: #191919;
+}
+.logo{
+  background: #f6bf2d;
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px;
+  margin-left: 2rem;
+}
+.logo img{
+  width: 50px;
+  border-radius: 50%;
+}
+.logo span{
+  font-size: 2rem;
+  color: #333;
+}
+
+/* nav */
+
+.menu-btn{
+  position: absolute;
+  top: 1rem;
+  right: 4rem;
+  cursor: pointer;
+  z-index: 2;
+}
+.menu-btn:hover{
+  opacity: 0.6;
+}
+
+nav .main-menu{
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #191919;
+  height: 100%;
+  width: 50%;
+  opacity: 0.9;
+  z-index: 12;
+  padding: 2rem 0 0 2rem;
+  border-right: #eee 1px solid;
+  transform: translateX(-500px);
+  transition: transform 0.5s ease-in-out;
+}
+
+.main-menu li{
+  list-style-type: none;
+  padding: 1rem;
+  border-bottom: #eee 1px solid;
+  margin: 10px;
+}
+.main-menu li:last-child{
+  border-bottom: 0;
+}
+ 
+.main-menu a{
+  text-decoration: none;
+  color: #eee;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+nav .main-menu.show{
+  transform: translateX(-20px);
+}
+
+/* showcase */
+#showcase{
+  background: url(../img/showcase.jpg) no-repeat center center/cover;
+  height: 70vh;
+  position: relative;
+}
+#showcase .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70vh;
+  background: #191919;
+  opacity: 0.8;
+  z-index: 1;
+}
+#showcase .content{
+  padding-top: 100px;
+  text-align: center;
+  font-family: 'poppins' , sans-serif;
+  font-style: italic;
+  z-index: 10;
+  position: absolute;
+  width: 100%;
+}
+
+#showcase .content h2
+{
+  padding-bottom: 2rem;
+}
+
+/* about */
+#about {
+  background: #252525;
+}
+
+#about .content{
+  text-align: center;
+  padding: 1.5rem;
+}
+
+
+#about .content p{
+  color: #f6bf2d;
+  padding-top: 0.6rem;
+}
+#about .card{
+  float: left;
+  margin-bottom: 1.5rem;
+}
+#about .card *{
+  margin-bottom: 1rem;
+}
+#about .card img{
+  border-bottom: #f6bf2d 5px solid;
+
+}
+
+/* service -ad */
+#service-ad{
+  background: url(../img/service-ad.jpg) no-repeat center center/cover;
+  min-height: 350px;
+  position: relative;
+}
+#service-ad .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #252525;
+  opacity: 0.8;
+  min-height: 350px;
+  width: 100%;
+  z-index: 2;
+}
+
+#service-ad .content{
+  width: 100%;
+  text-align: center;
+  padding-top: 140px;
+  position: absolute;
+  z-index: 5;
+  text-transform: capitalize;
+}
+#service-ad .content h3{
+  margin-bottom: 1rem;
+  padding: 10px;
+  font-size: 1.5rem;
+  color: #f6bf2d;
+}
+
+/* service */
+#service{
+  background: #191919;
+  color: #eee;
+}
+
+#service .content{
+  margin: 1rem 0;
+  padding: 1rem;
+  text-align: center;
+ 
+}
+
+#service .content p{
+  color: #f6bf2d;
+  margin-top: 1rem;
+}
+#service .card{
+  padding: 1rem;
+}
+#service .card i{
+ color: #f6bf2d;
+}
+#service .card *{
+   margin-top: 0.8rem;
+}
+#service .card h3,
+#service .content h2{
+  text-transform: capitalize;
+}
+/* record */
+#record{
+  background: #252525;
+  color: #eee;
+  padding:  2rem 0;
+}
+#record .content{
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+#record .content h2{
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+#record .content p{
+  color: #f6bf2d;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+#record .card{
+  padding: 1rem;
+  text-align: center;
+}
+#record .card *{
+  margin-bottom: 0.8rem;
+}
+#record .card h2{
+  font-size: 2rem;
+  color: #f6bf2d;
+}
+#record .card h3{
+  text-transform: capitalize;
+}
+/* footer */
+#footer{
+  background: #000;
+  padding: 1rem;
+}
+#footer .flex{
+  display: flex;
+  /* justify-content: ; */
+  align-items: center;
+}
+#footer img{
+  width: 30px;
+  border-radius: 100%;
+}
+
+#footer .card{
+  padding: 1.5rem 0;
+}
+#footer .card *{
+  margin: 0.5rem;
+}
+#footer .card:first-child,
+#footer table i
+{
+  color: #f6bf2d;
+}
+#footer table td{
+  padding: 1rem;
+}
+
